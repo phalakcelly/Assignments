@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+
+<body>
+    <style>
+       #text-box{
+           height: 30px;
+       }
+
+        span {
+            color: red;
+        }
+    </style>
+    <nav>
+        <a href="C:\Users\phalakc\Fynd\Assignment_1.html">Home</a>
+
+        <a href="C:\Users\phalakc\Fynd\Portfolio.html">Portfolio</a>
+        <a href="C:\Users\phalakc\Fynd\Contact.html">Contact</a>
+    </nav>
+    <h3>Contact Us</h3>
+
+    <p>
+        Phone:<a href="Assignment_1.html">+91-887437346</a>
+
+    </p>
+    <p>
+        Email:<a href="Contact.html">hello@example.com</a>
+    </p>
+    <h2>Drop a message</h2>
+    <p>
+        Please drop a message by filling out this form, and we will get back to you within 2 working days.
+    </p>
+    <p>
+        Fields marked with <span> *</span> are required.
+    </p>
+    <form action="Form_message.html" method="post">
+        <label for="name"> Your Name <span> *</span> </label><br>
+
+        <input type="text" placeholder="John Doe" id="name" name="full-name" required>
+        <br>
+        <br>
+        <label for="email"> Your Email <span> *</span> </label><br>
+        <input type="email" placeholder="john.doe@example.com" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="drop-down"> What are you looking to build? <span> *</span> </label><br>
+        <select id="drop-down" required>
+            <option value="">--Choose one--</option>
+            <option value="blog">Blog</option>
+            <option value="store">Online store</option>
+            <option value="game">Game</option>
+            <option value="other">Other</option>
+
+        </select>
+        <br>
+        <br>
+
+        <label for="interests">Platforms you plan to support <span> *</span></label> <br>
+        
+        <input type="checkbox" name="interests" value="web" id="web" checked required>
+        <label for="web"> Web</label>
+
+        <input type="checkbox" name="interests" value="mobile" id="mobile">
+        <label for="mobile"> Mobile</label>
+
+        <input type="checkbox" name="interests" value="desktop" id="desktop">
+        <label for="desktop"> Desktop</label>
+   
+        <br>
+        <br>
+        <label for="text-box"> Message</label><br>
+        <input id="text-box" type="text" <br>
+        <br>
+        <br>
+
+        <input type="reset" value="Reset">
+
+        <input type="submit" value="Send message">
+
+
+
+    </form>
+
+
+
+    <hr>
+    <footer>
+        © example.com
+    </footer>
+</body>
+
+</html>
