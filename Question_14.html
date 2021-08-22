@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        background-color: #F4F4F4;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .outer-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .inner-container {
+        display: flex;
+
+    }
+
+    .div1 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        padding-right: 3%;       
+    }
+
+    .topic {
+        border-top: 1px solid honeydew;
+        border-bottom: 1px solid honeydew;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid #D2D2D2;
+    }
+
+    .logo-wrapper {
+        width: 80%;
+        height: 40%;
+    }
+
+    .upper-div {
+        display: flex;
+        align-items: center;
+    }
+    @media only screen and (max-width: 650px) {
+        .inner-container{
+            flex-direction: column;
+         }
+       
+
+
+        }
+        @media only screen and (max-width: 850px) {
+            .inner-container{
+            flex-wrap: wrap;
+        }
+        .div1{
+            flex-basis: 40%;
+        }
+        #image1{
+            flex-basis: 100%;
+        }
+        
+
+        } 
+</style>
+
+<body>
+    <div class="container">
+        <div style="padding-top: 10px;" class="outer-container">
+            <h1>Popular product</h1>
+            <div class="inner-container">
+                <div class="div1">
+                    <div style="border-top: 1px solid #D2D2D2;" class="topic">
+                        <div class="upper-div">
+                            <span><img src="mobile_phone.png"></span>
+                            <span>Mobile Phones</span>
+                        </div>
+                        <div>Devices|Plans|Pre-paid</div>
+                    </div>
+                    <div class="topic">
+                        <div class="upper-div">
+                            <span><img src="tablet.png"></span>
+                            <span>Mobile Phones</span>
+                        </div>
+                        <div>Devices|Plans|Pre-paid</div>
+                    </div>
+                    <div class="topic">
+                        <div class="upper-div">
+                            <span><img src="entertainment.png"></span>
+                            <span>Mobile Phones</span>
+                        </div>
+                        <div>Devices|Plans|Pre-paid</div>
+                    </div>
+                </div>
+                <div class="div1">
+                    <div style="border-top: 1px solid #D2D2D2;"  class="topic">
+                        <div class="upper-div">
+                            <span><img src="nbn.png"></span>
+                            <span>Mobile Phones</span>
+                        </div>
+                        <div>Devices|Plans|Pre-paid</div>
+                    </div>
+                    <div class="topic">
+                        <div class="upper-div">
+                            <span><img src="mobile_broadband.png"></span>
+                            <span>Mobile Phones</span>
+                        </div>
+                        <div>Devices|Plans|Pre-paid</div>
+                    </div>
+                    <div class="topic">
+                        <div class="upper-div">
+                            <span><img src="deals.png"></span>
+                            <span>Mobile Phones</span>
+                        </div>
+                        <div>Devices|Plans|Pre-paid</div>
+                    </div>
+                </div>
+                <div id="image1" class="div1 ">
+                    <span class="logo-wrapper"><img style="width: 100%;height: 100%;"
+                            src="illo-content-box-slim-7-days-price-match-green-seal-652x320.svg"></span>
+                    <div style="font-weight: bold;">7 day price match</div>
+                    <p style="width: 70%;">Find a better price within 7 days of receiving your new, eligible phone from
+                        Telstra and we’ll credit the difference to your bill.</p>
+                        <button style="width: 70%;padding-top: 15px;padding-bottom: 15px;border: 1px solid #0064D2; color:#0064D2 ;border-radius: 3px;font-weight: bold;">See how to claim</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
