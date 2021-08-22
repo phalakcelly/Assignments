@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   /* body{
+    overflow: hidden;
+   } */
+    .container {
+       
+        display: flex;
+        width: 688px;
+        height: 488px;
+        position: absolute;
+        top:80px;
+        left: 300px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    .outer-container {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100%;
+        border: 1px solid gray;
+        background-color: white;
+    }
+
+    .inner-container {
+        display: flex;
+        height: 100%;
+    }
+
+    .left {
+        flex-basis: 37%;
+        background-color: #5167F4;
+    }
+
+    .right {
+        flex-basis: 60%;
+    }
+
+    .heading {
+        font-size: 20pt;
+        font-weight: bold;
+        color: white;
+    }
+    .inner{
+        padding-top: 40px;
+        padding-left: 30px;
+        
+    }
+    input{
+        width: 95%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid gray;
+        font-size: 11pt;
+    }
+    .login{
+        cursor: pointer;
+        margin-left: 20px;
+        height: 48px;
+        width: 330px;
+        background-color: #F56329;
+        border: none;
+        color: white;
+        font-weight: bold;
+    }
+    .ro{
+        cursor: pointer;
+        margin-left: 20px;
+        height: 48px;
+        width: 330px;
+        color:#2874F0;
+        background-color: white;
+        border: none;
+        box-shadow: 1px 1px 1px 1px gray;
+        font-weight: bold;
+    }
+    .lower a{
+        color:#2874F0; 
+        font-weight: bold;
+        text-decoration: none;
+
+    }
+    .bc{
+        overflow: visible;
+    }
+
+</style>
+
+<body>
+    <div class="bc">
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+    <h1>abcdef  ahjdasajhdsjaj</h1>
+</div>
+    <div class="container">
+        <div class="outer-container">
+            <div class="inner-container">
+                <div class="left">
+                    <div style="padding-top: 30px;padding-left: 10px;">
+                        <div style="margin-left: 10px;" class="heading">Login</div>
+                        <div style="color: #DBDBDE;padding-top: 20px;">Get access to your Orders, Wishlist and Recommendations</div>
+                        <span style="position: absolute;bottom: 40px;"><img src="flipkartimg.png"></span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="inner">
+                        <input placeholder="Enter Email/Mobilenumber"><br>
+                        <br>
+                        <input placeholder="Enter Email/Mobilenumber">
+                        <p style="padding-top: 20px;font-size: 10pt;">By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</p>
+                        <button class="login" style="margin-top: 15px;">Login</button>
+                        <p style="text-align: center;">Or</p>
+                        <button class="ro">Requet OTP</button>
+                        <p style="margin-top: 100px;text-align: center;" class="lower"><a href="">New to Flipkart? Create an account</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>X</div>
+    </div>
+</body>
+
+</html>
