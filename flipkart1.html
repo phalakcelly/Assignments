@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .navbar {
+            background-color: rgb(40, 116, 240);
+            position: sticky;
+            top: 0px;
+
+
+        }
+
+        .container {
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+
+
+        }
+
+        /* ul {
+            display: block;
+            list-style-type: none;
+            color: white;
+           
+            
+        } */
+
+
+
+
+
+
+        .logo {
+            height: 70px;
+            width: 90px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+        .logo:hover {
+            opacity: 50%;
+            cursor: pointer;
+        }
+
+        #search {
+            border-radius: 2px;
+            box-shadow: grey;
+        }
+
+        .btn1 {
+            background-color: white;
+            color: rgb(40, 116, 240);
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            width: 90px;
+            border: none;
+            border-radius: 2px;
+
+        }
+
+        .list {
+
+            display: none;
+            position:absolute;
+            top:71px;
+            background-color: white;
+            box-shadow: 1px 1px 1px 1px gray;
+            
+            
+        }
+
+        .list a{
+            color:black;
+            padding:10px 10px 10px 10px;
+            border-bottom: 1px solid  lightgray;
+
+        }
+        .list i{
+            color:rgb(40, 116, 240);
+        }
+        .xyz:hover .list {
+
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+
+        .more{
+            background-color: rgb(40, 116, 240);
+            color:white;
+            border:none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <img src="flipkart-plus_8d85f4.png" class="logo">
+            <textarea name="search" id="search" cols="80" rows="1"
+                placeholder="Search for products,brands and more"></textarea>
+
+            </textarea>
+            <button class="btn1">Login</button>
+            <div class="xyz">
+                <button class="more">More <i class="down-arrow fa fa-angle-down" aria-hidden="true"></i></button>
+                <div class="list">
+                    <a href="#"><i class="dropdown-icon fa fa-bell" aria-hidden="true"></i>
+                        Notifications</a>
+                    <a href="#"><i class="dropdown-icon fa fa-briefcase" aria-hidden="true"></i>
+                        Sell on flipkart</a>
+                    <a href="#"><i class="dropdown-icon fa fa-comments" aria-hidden="true"></i>
+                        24 * 7 customer care</a>
+                    <a href="#"><i class="dropdown-icon fa fa-level-up" aria-hidden="true"></i>
+                        Advertise</a>
+                    <a href="#"><i class="dropdown-icon fa fa-download" aria-hidden="true"></i>
+                        Download</a>
+                </div>
+            </div>
+            <a href="flipkart1.html">Cart</a>
+
+
+
+        </div>
+    </nav>
+</body>
+
+</html>
