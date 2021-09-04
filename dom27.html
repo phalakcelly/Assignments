@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #id-2{
+        color: white;
+        background-color: crimson;
+    }
+</style>
+<body>
+    <!-- <p>This i p1</p>    
+    <p>This i p2</p>    
+    <p>This i p3</p>     -->
+    <script>
+        document.querySelector('body').innerHTML= `<p>This i p1</p>    
+    <p>This i p2</p>    
+    <p>This i p3</p>     `
+
+    
+
+    const plist=document.querySelectorAll('p');
+    plist[1].setAttribute('id','2')
+    console.log(plist);
+    for (let index = 0; index < plist.length; index++) {
+        if(index==1){
+            console.log(plist[1].innerText);
+        }
+        
+    }
+   console.log(plist[1].setAttribute('id','2'));
+   plist[1].setAttribute('id','id-2');
+   plist[1].setAttribute('name','anything');
+   
+
+//    document.querySelector('body').lastElementChild.nextSibling.innerHTML=`<p> This is last child added </p>`
+    </script>
+</body>
+</html>
