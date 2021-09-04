@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>this is p</p>
+    <form>
+    <input type="text"/>
+    <input class="submit" type="submit"/>
+</form>
+
+<script>
+const pp=document.querySelector('p');
+pp.addEventListener( 'click', function() {
+alert('this is clicked')
+    
+
+})
+
+const inp=document.querySelector('input')
+const form=document.querySelector('form');
+inp.addEventListener('input',function(event){
+    console.log(event.target.value);
+    if(event.target.value.length>8){
+
+        inp.style.backgroundColor='green';
+    }
+
+    form.addEventListener('submit',function(event1){
+    if(event.target.value.length<8){
+        event1.preventDefault();
+
+}
+})
+
+
+
+
+})
+</script>
+    
+</body>
+</html>
